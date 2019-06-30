@@ -5,28 +5,43 @@
                                                    android:orientation="vertical"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="wrap_content">
-    <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp" app:srcCompat="@drawable/ic_person"
-            android:id="@+id/user_image" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="8dp"/>
-    <TextView
-            android:text="jack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_name"
-            app:layout_constraintTop_toTopOf="@+id/user_image" app:layout_constraintStart_toEndOf="@+id/user_image"
-            android:layout_marginStart="8dp" android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="#1C1B1B"/>
-    <TextView
-            android:text="jack@gmail.com"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/user_email"
-            app:layout_constraintTop_toBottomOf="@+id/user_name" app:layout_constraintStart_toEndOf="@+id/user_image"
-            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/user_image" android:layout_marginTop="16dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="#1E1D1D"/>
+
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                       android:layout_height="match_parent" android:layout_marginTop="8dp"
+                                       app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                                       app:layout_constraintBottom_toBottomOf="parent"
+                                       app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                                       app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp" app:srcCompat="@drawable/ic_person"
+                android:id="@+id/user_image" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"/>
+        <TextView
+                android:text="jack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"
+                app:layout_constraintTop_toTopOf="@+id/user_image" app:layout_constraintStart_toEndOf="@+id/user_image"
+                android:layout_marginStart="8dp" android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#1C1B1B"/>
+        <TextView
+                android:text="jack@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_email"
+                app:layout_constraintTop_toBottomOf="@+id/user_name"
+                app:layout_constraintStart_toEndOf="@+id/user_image"
+                android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/user_image" android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="#1E1D1D"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
